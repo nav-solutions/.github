@@ -1,13 +1,15 @@
 RTK-rs
 ======
 
-RTK-rs is a set of tools to solve the RTK Differntial GNSS positioning problem.
+RTK-rs is a set of tools (applications) and libraries to work with GNSS and resolve precise positions in Rust.
 
-It is based off high quality libraries available in Rust, spanning several ecosystems:
+## Ecosystem :crab:
+
+`rtk-rs` hosts the following libraries of the Rust community
+
+- [GNSS](https://github.com/rtk-rs/gnss) for high level definitions to work with GNSS in Rust
+
+`rtk-rs` relies heavily on the following ecosystems
 
 - [Hifitime](https://github.com/nyx-space/hifitime) for accurate timing and time scales support
-- [Nyx-space](https://github.com/nyx-space/nyx) for navigation and calculations at the scale of the Solar System and beyond
-- [RINEX](https://github.com/georust/rinex) for space vehicles, constellations, RINEX and SP3 precise orbits support 
-- [RTCM](https://github.com/martinhakansson/rtcm-rs) messages encoding and decoding in Rust
-- [Ublox-rs](https://github.com/ublox-rs/ublox) GNSS receivers management
-- NMEA frames parsing
+- [Nyx-space](https://github.com/nyx-space/nyx) for navigation at the scale of the Solar System and beyond
