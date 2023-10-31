@@ -1,5 +1,5 @@
-RTK-rs
-======
+RTK-rs 🛰️
+==========
 
 RTK-rs is a set of tools (applications) and libraries to work with GNSS and resolve precise positions in Rust.
 
