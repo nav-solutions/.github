@@ -1,13 +1,14 @@
 RTK-rs 🛰️
 ==========
 
-RTK-rs is a set of tools (applications) and libraries to work with GNSS and resolve precise positions in Rust.
+RTK-rs is a set of tools and libraries to work with GNSS and resolve precise positions in Rust.
 
 ## Ecosystem :crab:
 
 `rtk-rs` hosts the following Rust libraries
 
 - [GNSS](https://github.com/rtk-rs/gnss) for high level definitions to work with GNSS in Rust
+- [RTK](https://github.com/rtk-rs/gnss-rtk) is a position solver, to resolve precise positions
 
 `rtk-rs` relies heavily on the following ecosystems
 
