@@ -10,6 +10,10 @@ RTK-rs is a set of tools and libraries to work with GNSS. The core libraries are
 - [GNSS](https://github.com/rtk-rs/gnss) for high level definitions to work with GNSS in Rust
 - [RTK](https://github.com/rtk-rs/gnss-rtk) is a position solver, to resolve precise positions
 
+`rtk-rs` hosts the following applications
+
+- [RT-NAVI](https://github.com/rtk-rs/rt-navi) High precision real time navigation
+  
 `rtk-rs` relies heavily on the following ecosystems
 
 - [Hifitime](https://github.com/nyx-space/hifitime) for accurate timing and time scales support
