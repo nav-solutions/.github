@@ -1,11 +1,11 @@
 RTK-rs 🛰️
 ==========
 
-RTK-rs is a set of tools and libraries to work with GNSS and resolve precise positions in Rust.
+RTK-rs is a set of tools and libraries to work with GNSS. The core libraries are written in pure Rust.
 
-## Ecosystem :crab:
+## Ecosystem
 
-`rtk-rs` hosts the following Rust libraries
+`rtk-rs` hosts the following libraries
 
 - [GNSS](https://github.com/rtk-rs/gnss) for high level definitions to work with GNSS in Rust
 - [RTK](https://github.com/rtk-rs/gnss-rtk) is a position solver, to resolve precise positions
@@ -13,9 +13,10 @@ RTK-rs is a set of tools and libraries to work with GNSS and resolve precise pos
 `rtk-rs` relies heavily on the following ecosystems
 
 - [Hifitime](https://github.com/nyx-space/hifitime) for accurate timing and time scales support
-- [Nyx-space](https://github.com/nyx-space/nyx) for navigation at the scale of the Solar System and beyond
+- [ANISE](https://github.com/nyx-space/nyx) for high precision navigation
+- [Nyx-space](https://github.com/nyx-space/nyx) for complex orbital features
 
 `rtk-rs` is used in the following applications
 
-- [RINEX Processing](https://github.com/georust/rinex) to post process RINEX and resolve positions
-- [RNX2CGGTTS](https://github.com/georust/rinex) generate CGGTTS data for high accuracy time transfer
+- [Resolve PPP solutions](https://github.com/georust/rinex) in the `rinex-cli` application
+- [Resolve CGGTTS solutions](https://github.com/georust/rinex) in the `rinex-cli` applications
