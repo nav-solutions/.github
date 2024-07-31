@@ -22,5 +22,5 @@ RTK-rs is a set of tools and libraries to work with GNSS. The core libraries are
 
 `rtk-rs` is used in the following applications
 
-- [Resolve PPP solutions](https://github.com/georust/rinex) in the `rinex-cli` application
-- [Resolve CGGTTS solutions](https://github.com/georust/rinex) in the `rinex-cli` applications
+- [Resolve PPP solutions](https://github.com/georust/rinex) in `rinex-cli` application
+- [Resolve CGGTTS solutions](https://github.com/georust/rinex) in `rinex-cli` applications
