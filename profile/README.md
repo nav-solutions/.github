@@ -1,7 +1,9 @@
 RTK-rs 🛰️
 ==========
 
-RTK-rs is a set of tools and libraries to work with GNSS. The core libraries are written in pure Rust.
+RTK-rs is a set of GNSS oriented tools and libraries. The core libraries are written in pure Rust.
+
+This workspace is published under the [Mozilla Public v2 license](https://www.mozilla.org/en-US/MPL/2.0/)
 
 ## Ecosystem
 
