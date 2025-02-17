@@ -9,8 +9,8 @@ This workspace is published under the [Mozilla Public v2 license](https://www.mo
 
 `rtk-rs` hosts the following libraries
 
-- [GNSS](https://github.com/rtk-rs/gnss) for high level definitions to work with GNSS in Rust
-- [RTK](https://github.com/rtk-rs/gnss-rtk) is a position solver, to resolve precise positions
+- [GNSS lib](https://github.com/rtk-rs/gnss) for high level definitions
+- [GNSS-RTK](https://github.com/rtk-rs/gnss-rtk) a Position Velocity TIme (PVT) solution solver
 
 `rtk-rs` hosts the following applications
 
