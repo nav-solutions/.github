@@ -10,7 +10,7 @@ This workspace is published under the [Mozilla Public v2 license](https://www.mo
 `rtk-rs` hosts the following libraries
 
 - [GNSS lib](https://github.com/rtk-rs/gnss) for high level definitions
-- [GNSS Quality Control](https://github.com/rtk-rs/gnss) for standardized fileset Qc and post processing
+- [GNSS Quality Control](https://github.com/rtk-rs/gnss-qc) for standardized fileset Qc and post processing
 - [GNSS-RTK](https://github.com/rtk-rs/gnss-rtk) a Position Velocity TIme (PVT) solution solver
 
 `rtk-rs` hosts the following applications
