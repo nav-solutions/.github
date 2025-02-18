@@ -5,7 +5,7 @@ RTK-rs is a set of GNSS oriented tools and libraries. The core libraries are wri
 
 This workspace is published under the [Mozilla Public v2 license](https://www.mozilla.org/en-US/MPL/2.0/)
 
-## Ecosystem
+## Framework
 
 `rtk-rs` hosts the following libraries
 
@@ -16,11 +16,12 @@ This workspace is published under the [Mozilla Public v2 license](https://www.mo
 
 - [RT-NAVI](https://github.com/rtk-rs/rt-navi) High precision real time navigation
   
-`rtk-rs` relies heavily on the following ecosystems
+`rtk-rs` relies heavily on the following frameworks
 
-- [Hifitime](https://github.com/nyx-space/hifitime) for accurate timing and time scales support
-- [ANISE](https://github.com/nyx-space/nyx) for high precision navigation
-- [Nyx-space](https://github.com/nyx-space/nyx) for complex orbital features
+- [Nyx-Space](https://github.com/nyx-space/)
+  - Hifitime for accurate timing and time scales definition
+  - ANISE for navigation
+  - Nyx for complex orbital functions
 
 `rtk-rs` is used in the following applications
 
