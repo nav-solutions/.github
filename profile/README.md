@@ -3,28 +3,31 @@ RTK-rs 🛰️
 
 RTK-rs is a set of GNSS oriented tools and libraries. The core libraries are written in pure Rust.
 
-This workspace is published under the [Mozilla Public v2 license](https://www.mozilla.org/en-US/MPL/2.0/)
-
 ## Framework
 
-`rtk-rs` hosts the following libraries
+Our framework is published under the [Mozilla Public v2 license](https://www.mozilla.org/en-US/MPL/2.0/).
+
+1. Libraries
 
 - [GNSS lib](https://github.com/rtk-rs/gnss) for high level definitions
 - [GNSS Quality Control](https://github.com/rtk-rs/gnss-qc) for standardized fileset Qc and post processing
 - [GNSS-RTK](https://github.com/rtk-rs/gnss-rtk) a Position Velocity TIme (PVT) solution solver
 
-`rtk-rs` hosts the following applications
+2. Applications
 
 - [RT-NAVI](https://github.com/rtk-rs/rt-navi) High precision real time navigation
-  
-`rtk-rs` relies heavily on the following frameworks
+
+3. Command line utilities
+
+- [CRX2RNX](https://github.com/rtk-rs/crx2rnx) CRINEX decompression tool
+- [RNX2CRX](https://github.com/rtk-rs/crx2rnx) RINEX compression tool
+
+## Ecosystem
+
+`rtk-rs` relies or is closely tied to some great frameworks available
+in Rust, among those we can cite
 
 - [Nyx-Space](https://github.com/nyx-space/)
   - Hifitime for accurate timing and time scales definition
   - ANISE for navigation
   - Nyx for complex orbital functions
-
-`rtk-rs` is used in the following applications
-
-- [Resolve PPP solutions](https://github.com/georust/rinex) in `rinex-cli` application
-- [Resolve CGGTTS solutions](https://github.com/georust/rinex) in `rinex-cli` application
