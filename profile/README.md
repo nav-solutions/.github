@@ -19,6 +19,10 @@ Our framework is published under the [Mozilla Public v2 license](https://www.moz
 
 3. Command line utilities
 
+- [RINEX-Cli](https://github.com/rtk-rs/rinex-cli) RINEX and SP3 post processing
+  - including operations similar to TEQc
+  - including a PVT solutions solver like RTKlib
+  - include a CGGTTS solutions solver
 - [CRX2RNX](https://github.com/rtk-rs/crx2rnx) CRINEX decompression tool
 - [RNX2CRX](https://github.com/rtk-rs/crx2rnx) RINEX compression tool
 
