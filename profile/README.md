@@ -3,6 +3,8 @@ RTK-rs 🛰️
 
 RTK-rs is a set of GNSS oriented tools and libraries. The core libraries are written in pure Rust.
 
+Join [our Discord channel](https://discord.gg/duETmeGc) for FAQ, the latest news and more learning material.
+
 ## Framework
 
 Our framework is published under the [Mozilla Public v2 license](https://www.mozilla.org/en-US/MPL/2.0/)
