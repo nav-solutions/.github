@@ -17,6 +17,7 @@ and [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) when that applies.
 - [GNSS lib](https://github.com/rtk-rs/gnss) for high level definitions
 - [GNSS-RTK](https://github.com/rtk-rs/gnss-rtk) a Position Velocity TIme (PVT) solution solver
 - [GNSS Quality Control](https://github.com/rtk-rs/gnss-qc) for standardized fileset Qc and post processing
+- [CGGTTS](https://github.com/rtk-rs/cggtts) file parsing and production for remote clock comparison & "time transfer"
 - [BINEX (Binary EXchange) parser](https://github.com/rtk-rs/binex) the only open source real-time GNSS streaming format
 - [SINEX parser and writer](https://github.com/rtk-rs/sinex) for SINEX files management, PPP processing pipelines and constellations analysis
 
@@ -31,9 +32,9 @@ and [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) when that applies.
   - including a PVT solutions solver like RTKlib
   - include a CGGTTS solutions solver
 - [CRX2RNX](https://github.com/rtk-rs/crx2rnx) CRINEX decompression tool
-- [RNX2CRX](https://github.com/rtk-rs/crx2rnx) RINEX compression tool
-- [RINEX2BIN](https://github.com/rtk-rs/rinex2bin) RINEX serialization to BINEX
+- [RNX2CRX](https://github.com/rtk-rs/rnx2crx) RINEX compression tool
 - [UBX2RINEX](https://github.com/rtk-rs/ubx2rinex) capture U-Blox stream to RINEX
+- [RINEX2BIN](https://github.com/rtk-rs/rinex2bin) RINEX serialization to BINEX
 - [BIN2RINEX](https://github.com/rtk-rs/bin2rinex) capture BINEX stream to RINEX
 
 ## Ecosystem
