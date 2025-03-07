@@ -10,7 +10,7 @@ Join [our Discord channel](https://discord.gg/duETmeGc) for FAQ, the latest news
 Our framework is published under the [Mozilla Public v2 license](https://www.mozilla.org/en-US/MPL/2.0/)
 and [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) when that applies.
 
-1. Libraries
+## Libraries
 
 - [RINEX (Receiver Independent EXchange) parser](https://github.com/rtk-rs/rinex) for RINEX file management and processing
 - [SP3 parser](https://github.com/rtk-rs/sp3) for SP3 files management and PPP processing pipelines 
@@ -21,11 +21,11 @@ and [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) when that applies.
 - [BINEX (Binary EXchange) parser](https://github.com/rtk-rs/binex) the only open source real-time GNSS streaming format
 - [SINEX parser and writer](https://github.com/rtk-rs/sinex) for SINEX files management, PPP processing pipelines and constellations analysis
 
-2. Applications
+## Applications
 
 - [RT-NAVI](https://github.com/rtk-rs/rt-navi) High precision real time navigation
 
-3. Command line utilities
+## Command line utilities
 
 - [RINEX-Cli](https://github.com/rtk-rs/rinex-cli) RINEX and SP3 post processing
   - including operations similar to TEQc
