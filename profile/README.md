@@ -23,10 +23,6 @@ and [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) when that applies.
 
 ## Applications
 
-- [RT-NAVI](https://github.com/rtk-rs/rt-navi) High precision real time navigation
-
-## Command line utilities
-
 - [RINEX-Cli](https://github.com/rtk-rs/rinex-cli) RINEX and SP3 post processing
   - including operations similar to TEQc
   - including a PVT solutions solver like RTKlib
@@ -34,6 +30,7 @@ and [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) when that applies.
 - [CRX2RNX](https://github.com/rtk-rs/crx2rnx) CRINEX decompression tool
 - [RNX2CRX](https://github.com/rtk-rs/rnx2crx) RINEX compression tool
 - [UBX2RINEX](https://github.com/rtk-rs/ubx2rinex) capture U-Blox stream to RINEX
+- [RT-NAVI](https://github.com/rtk-rs/rt-navi) Real Time Navigation, currently limited to U-Blox receivers
 - [RINEX2BIN](https://github.com/rtk-rs/rinex2bin) RINEX serialization to BINEX
 - [BIN2RINEX](https://github.com/rtk-rs/bin2rinex) capture BINEX stream to RINEX
 
