@@ -18,6 +18,7 @@ and [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) when that applies.
 - [GNSS-RTK](https://github.com/rtk-rs/gnss-rtk) a Position Velocity TIme (PVT) solution solver
 - [GNSS Quality Control](https://github.com/rtk-rs/gnss-qc) for standardized fileset Qc and post processing
 - [CGGTTS](https://github.com/rtk-rs/cggtts) file parsing and production for remote clock comparison & "time transfer"
+- [GNNS-Protos](https://github.com/rtk-rs/gnss-protos) to decode (and soon encode) GNSS protocols
 - [BINEX (Binary EXchange) parser](https://github.com/rtk-rs/binex) the only open source real-time GNSS streaming format
 - [SINEX parser and writer](https://github.com/rtk-rs/sinex) for SINEX files management, PPP processing pipelines and constellations analysis
 
