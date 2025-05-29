@@ -3,7 +3,7 @@ RTK-rs 🛰️
 
 RTK-rs is a set of GNSS oriented tools and libraries. The core libraries are written in pure Rust.
 
-Join the [Discord channel](https://discord.gg/aVxH9GpvxN) for FAQ, the latest news, posts and learning material.
+Join the [Discord channel](https://discord.gg/EqhEBXBmJh) for FAQ, the latest news, posts and learning material.
 
 ## Framework
 
@@ -19,6 +19,7 @@ and [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) when that applies.
 - [GNSS Quality Control](https://github.com/rtk-rs/gnss-qc) for standardized fileset Qc and post processing
 - [CGGTTS](https://github.com/rtk-rs/cggtts) file parsing and production for remote clock comparison & "time transfer"
 - [GNNS-Protos](https://github.com/rtk-rs/gnss-protos) to decode (and soon encode) GNSS protocols
+- [NTRIP Client](https://github.com/rtk-rs/ntrip-client) for RTCM reception over TCP/HTTP using NTRIP v1 or v2 protocol
 - [BINEX (Binary EXchange) parser](https://github.com/rtk-rs/binex) the only open source real-time GNSS streaming format
 - [SINEX parser and writer](https://github.com/rtk-rs/sinex) for SINEX files management, PPP processing pipelines and constellations analysis
 
