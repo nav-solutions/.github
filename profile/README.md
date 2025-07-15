@@ -5,19 +5,6 @@ RTK-rs is a set of GNSS libraries and applications, mostly written in Rust.
 The framework is published under the [Mozilla Public v2 license](https://www.mozilla.org/en-US/MPL/2.0/)
 and [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) when that applies.
 
-## Navigation
-
-- [GNSS-RTK](https://github.com/rtk-rs/gnss-rtk) is our navigation solver.
-It allows manual precise navigation, typically used in post-processing but its abstract interface
-makes it also compatible with real-time navigation (see our [`rt-navi` Proof of Concept using a U-Blox](https://github.com/rtk-rs/rt-navi).
-Unlike RTKLib, we propose a single solver that can do both RTK and PPP, possibly changing the navigation technique for each measurement,
-offering maximal flexibility to the end-user, especially in their own application.  
-
-- [RINEX-Cli](https://github.com/rtk-rs/rinex-cli) is our command-line application, dedicated
-to file post-processing and capable to deploy GNSS-RTK and/or CGGTTS, for post processed PPP, RTK and timing solutions.
-
-- All our parsers provide the basics to post-processed navigation, see down below.
-
 ## Parsers
 
 `rtk-rs` provides several parsers that are now well integrated in the Rust community. Most of them supporting
@@ -47,21 +34,13 @@ Join us on [Discord](https://discord.gg/EqhEBXBmJh) where we discuss the latest 
 
 ## Other Libraries
  
-- [GNSS Quality Control](https://github.com/rtk-rs/gnss-qc) for standardized fileset Qc and post processing
 - [GNNS-Protos](https://github.com/rtk-rs/gnss-protos) to decode (and soon encode) GNSS protocols
-- [NTRIP Client](https://github.com/rtk-rs/ntrip-client) for RTCM reception over TCP/HTTP using NTRIP v1 or v2 protocol
-- [SINEX parser and writer](https://github.com/rtk-rs/sinex) for SINEX files management, PPP processing pipelines and constellations analysis
 
 ## Applications
 
-- [RINEX-Cli](https://github.com/rtk-rs/rinex-cli) RINEX and SP3 post processing
-  - including operations similar to TEQc
-  - including a PVT solutions solver like RTKlib
-  - include a CGGTTS solutions solver
 - [CRX2RNX](https://github.com/rtk-rs/crx2rnx) CRINEX decompression tool
 - [RNX2CRX](https://github.com/rtk-rs/rnx2crx) RINEX compression tool
 - [UBX2RINEX](https://github.com/rtk-rs/ubx2rinex) capture U-Blox stream to RINEX
-- [RT-NAVI](https://github.com/rtk-rs/rt-navi) Real Time Navigation, currently limited to U-Blox receivers
 - [RINEX2BIN](https://github.com/rtk-rs/rinex2bin) RINEX serialization to BINEX
 - [BIN2RINEX](https://github.com/rtk-rs/bin2rinex) capture BINEX stream to RINEX
 
