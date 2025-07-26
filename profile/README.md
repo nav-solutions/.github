@@ -3,6 +3,10 @@ NAV-Solutions 🛰️
 
 NAV-Solutions (NAV-SLS) is a framework providing GNSS libraries and applications, mostly written in Rust.  
 
+## Community
+
+Join us on [Discord](https://discord.gg/EqhEBXBmJh) where we discuss the latest developments, publish demos, provides FAQ and answer questions.
+
 ## Parsers
 
 We provide support for a few file formats, broadly used in GNSS and Geodesy applications. Some of them are
@@ -29,10 +33,6 @@ Currently under development.
 Our [GNSS-RTK](https://github.com/nav-solutions/gnss-rtk) is a complete PVT solution solver, that supports both
 PPP and RTK algorithms. It is sort of a modern rewrite of RTKLib, with its own specificities. For example, we provide
 a single solver that can do both, and the API is also compatible with real-time navigation.
-
-## Community
-
-Join us on [Discord](https://discord.gg/EqhEBXBmJh) where we discuss the latest developments, publish demos, provides FAQ and answer questions.
 
 ## Other Libraries
  
