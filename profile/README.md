@@ -16,6 +16,11 @@ the first stage of complex processing pipelines. Most of them also work both way
 - [RINEX (Receiver Independent EXchange) File parser](https://github.com/nav-solutions/rinex) supports almost all types of RINEX files,
 and comes with full CRINEX support, thanks to a modern rewrite of this algorithm.
 
+- [IONEX (Ionosphere Maps) parser](https://github.com/nav-solutions/ionex), a snapshot of the ionosphere state, in 2D or 3D
+
+- [DORIS (special Observation) RINEX parser](https://github.com/nav-solutions/doris), the DORIS measurement network is operated
+and maintained by CNES.
+
 - [SP3 File parser](https://github/com/nav-solutions/sp3) for precise navigation, typically required by PPP solutions.  
 We support SP3 formatting as well and new features are being developed to provide Orbital Determination (OD).
 
