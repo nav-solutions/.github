@@ -43,6 +43,10 @@ a single solver that can do both, and the API is also compatible with real-time 
  
 - [GNNS-Protos](https://github.com/nav-solutions/gnss-protos) to decode (and soon encode) GNSS protocols. Dedicated to real-time applications.
 
+## Other tools
+
+- [UBX2RINEX](https://github.com/nav-solutions/ubx2rinex) a command line tool to create RINEX snapshot from U-Blox receivers or UBX files.
+
 ## Ecosystem
 
 This framework relies on the great libraries integrated to the Rust community, in particular:
