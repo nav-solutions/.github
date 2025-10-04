@@ -45,9 +45,10 @@ a single solver that can do both, and the API is also compatible with real-time 
 
 ## Other tools
 
-- [UBX2RINEX](https://github.com/nav-solutions/ubx2rinex) a command line tool to create RINEX snapshot from U-Blox receivers or UBX files.
-- [rt-navi](https://github.com/nav-solutions/rt-navi) is a proof-of-contept that our `GNSS-RTK` P.V.T solver may apply to real-time navigation as well,
-using a U-Blox receiver.
+- [UBX2RINEX](https://github.com/nav-solutions/ubx2rinex) a command-line tool to collect RINEX files from U-Blox receivers (or UBX captures).
+- [RINEX2BIN](https://github.com/nav-solutions/ubx2rinex) a command-line tool to serialize RINEX to all protocols we support
+- [RT-NAVI (Real-Time Navigation)](https://github.com/nav-solutions/rt-navi) is a proof-of-contept that our `GNSS-RTK` solver applies to real-time navigation as well.
+We do this by operating a U-Blox receiver in "raw" mode.
 
 ## Ecosystem
 
