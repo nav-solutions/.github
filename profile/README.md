@@ -39,9 +39,19 @@ Our [GNSS-RTK](https://github.com/nav-solutions/gnss-rtk) is a complete PVT solu
 PPP and RTK algorithms. It is sort of a modern rewrite of RTKLib, with its own specificities. For example, we provide
 a single solver that can do both, and the API is also compatible with real-time navigation.
 
+## RINEX CLI (Command line)
+
+[RINEX-Cli](https://github.com/nav-solutions/rinex-cli) is our post-processing command line application.
+It wraps the RINEX and SP3 parsers, our P.V.T and CGGTTS solvers to allow three major workflows:
+- the Quality Check (Qc) pre-navigation analysis
+- P.V.T solutions solving
+- CGGTTS solutions solving
+
 ## Other Libraries
  
 - [GNNS-Protos](https://github.com/nav-solutions/gnss-protos) to decode (and soon encode) GNSS protocols. Dedicated to real-time applications.
+- [NTRIP client](https://github.com/nav-solutions/ntrip-client) is a small object that facilitates connecting to NTRIP servers
+for real-time RTCM messaging. It uses `tokio` to handle the socket.
 
 ## Other tools
 
