@@ -33,11 +33,21 @@ RINEX binary equivalent. We support the basic frames and we provide an encoder a
 - [SINEX File parser](https://github.com/rtk-rs/sinex): for daily GNSS bias files.
 Currently under development.
 
-## GNSS-RTK
+## `GNSS-RTK`: Navigation Solver and filter
 
-Our [GNSS-RTK](https://github.com/nav-solutions/gnss-rtk) is a complete PVT solution solver, that supports both
-PPP and RTK algorithms. It is sort of a modern rewrite of RTKLib, with its own specificities. For example, we provide
-a single solver that can do both, and the API is also compatible with real-time navigation.
+This framework hosts [GNSS-RTK](https://github.com/nav-solutions/gnss-rtk) which is a complete PVT solution solver.
+It supports both PPP (autonomous) or RTK (ground referenced) navigation. It offers a lot of abstraction so it may apply
+to any user applications, whether it is real-time or post-processed does not matter. It also offers a view to its internal
+models and is very easy to configure and deploy. 
+
+Application to post-processed navigation has been demonstrated with our [rinex-cli tool](https://github.com/nav-solutions/rinex-cli).
+Application to real-time UBX stream (raw but decoded GPS data) has been demonstrated with our [rt-navi tool](https://github.com/nav-solutions/rt-navi).
+
+## `GNSS-Qc` (Quality Control and Geo Pipeline)
+
+`gnss-qc` is an abstract and complex library which provides a processing pipeline and is capable of managing all input products required
+by GNSS applications. It aims at providing an easy to user interface and remain flexible. Ideally it will not be limited to post-processed applications.
+It is a library from which you can build your own GUI or application, where `gnss-qc` serves as the computation core, which deals with the most difficult part for you.
 
 ## RINEX CLI (Command line)
 
@@ -49,7 +59,8 @@ It wraps the RINEX and SP3 parsers, our P.V.T and CGGTTS solvers to allow three 
 
 ## Other Libraries
  
-- [GNNS-Protos](https://github.com/nav-solutions/gnss-protos) to decode (and soon encode) GNSS protocols. Dedicated to real-time applications.
+- [GNNS-Protos](https://github.com/nav-solutions/gnss-protos) to decode (and soon encode) GNSS protocols. Dedicated to applications
+that need to deal with raw GNSS binary streams, whether as an input or output, whether it is real-time or post processed.
 - [NTRIP client](https://github.com/nav-solutions/ntrip-client) is a small object that facilitates connecting to NTRIP servers
 for real-time RTCM messaging. It uses `tokio` to handle the socket.
 
