@@ -59,8 +59,8 @@ It wraps the RINEX and SP3 parsers, our P.V.T and CGGTTS solvers to allow three 
 
 ## Other Libraries
  
-- [GNNS-Protos](https://github.com/nav-solutions/gnss-protos) to decode (and soon encode) GNSS protocols. Dedicated to applications
-that need to deal with raw GNSS binary streams, whether as an input or output, whether it is real-time or post processed.
+- [GNNS-Protos](https://github.com/nav-solutions/gnss-protos) to encode and decode GNSS protocol bit streams.
+Currently supporting GPS, QZSS and Galileo INAV protocols.
 - [NTRIP client](https://github.com/nav-solutions/ntrip-client) is a small object that facilitates connecting to NTRIP servers
 for real-time RTCM messaging. It uses `tokio` to handle the socket.
 
