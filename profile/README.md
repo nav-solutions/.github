@@ -16,7 +16,11 @@ the first stage of complex processing pipelines. Most of them also work both way
 - [RINEX (Receiver Independent EXchange) File parser](https://github.com/nav-solutions/rinex) supports almost all types of RINEX files,
 and comes with full CRINEX support, thanks to a modern rewrite of this algorithm.
 
-- [IONEX (Ionosphere Maps) parser](https://github.com/nav-solutions/ionex), a snapshot of the ionosphere state, in 2D or 3D
+- [IONEX (Ionosphere Maps) parser](https://github.com/nav-solutions/ionex), a snapshot of the ionosphere state, in 2D or 3D.
+The library offers several post-processing features, such as spatial interpolation.
+- 
+- [GNSS-Protos](https://github.com/nav-solutions/gnss-protos) to encode, decode, scramble & soon demodulate the most common
+GNSS signals. It currently supports GPS/QZSS LNAV (L1 C/A) and Galileo INAV protocols.
 
 - [DORIS (special Observation) RINEX parser](https://github.com/nav-solutions/doris), the DORIS measurement network is operated
 and maintained by CNES.
@@ -45,27 +49,21 @@ Application to real-time UBX stream (raw but decoded GPS data) has been demonstr
 
 ## `GNSS-Qc` (Quality Control and Geo Pipeline)
 
-`gnss-qc` is an abstract and complex library which provides a processing pipeline and is capable of managing all input products required
-by GNSS applications. It aims at providing an easy to user interface and remain flexible. Ideally it will not be limited to post-processed applications.
-It is a library from which you can build your own GUI or application, where `gnss-qc` serves as the computation core, which deals with the most difficult part for you.
+[`gnss-qc`](https://github.com/nav-solutions/gnss-qc) is an abstract and complex library which regroups the core processing algorithms (or geo "pipelines) required by
+GNSS navigation, timing applications and much more. It works is Multi Input Single Output (`MISO`) engine that deploys complex
+algorithms and streams solutions into a single output. 
 
 ## RINEX CLI (Command line)
 
-[RINEX-Cli](https://github.com/nav-solutions/rinex-cli) is our post-processing command line application.
-It wraps the RINEX and SP3 parsers, our P.V.T and CGGTTS solvers to allow three major workflows:
-- the Quality Check (Qc) pre-navigation analysis
-- P.V.T solutions solving
-- CGGTTS solutions solving
+[`rinex-cli`](https://github.com/nav-solutions/rinex-cli) is our post-processing command line application.
+It relies on `gnss-qc` and is dedicated to post-processing. It can perform Qc analysis, sort of like `TEQc`.
+It integrates our P.V.T solver and can resolve CPP, PPP, RTK-CPP, RTK-PPP like part of the `RTKLib` toolbox.
+It is also capable of solving CGGTTS solutions for common view time transfer & analysis.
 
-## Other Libraries
- 
-- [GNSS-Protos](https://github.com/nav-solutions/gnss-protos) to encode and decode GNSS protocol bit streams.
-Currently supporting GPS, QZSS and Galileo INAV protocols.
+## Other Utilities
+
 - [NTRIP client](https://github.com/nav-solutions/ntrip-client) is a small object that facilitates connecting to NTRIP servers
 for real-time RTCM messaging. It uses `tokio` to handle the socket.
-
-## Other tools
-
 - [UBX2RINEX](https://github.com/nav-solutions/ubx2rinex) a command-line tool to collect RINEX files from U-Blox receivers (or UBX captures).
 - [RINEX2BIN](https://github.com/nav-solutions/ubx2rinex) a command-line tool to serialize RINEX to all protocols we support
 - [RT-NAVI (Real-Time Navigation)](https://github.com/nav-solutions/rt-navi) is a proof-of-contept that our `GNSS-RTK` solver applies to real-time navigation as well.
