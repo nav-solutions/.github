@@ -18,7 +18,7 @@ and comes with full CRINEX support, thanks to a modern rewrite of this algorithm
 
 - [IONEX (Ionosphere Maps) parser](https://github.com/nav-solutions/ionex), a snapshot of the ionosphere state, in 2D or 3D.
 The library offers several post-processing features, such as spatial interpolation.
-- 
+  
 - [GNSS-Protos](https://github.com/nav-solutions/gnss-protos) to encode, decode, scramble & soon demodulate the most common
 GNSS signals. It currently supports GPS/QZSS LNAV (L1 C/A) and Galileo INAV protocols.
 
